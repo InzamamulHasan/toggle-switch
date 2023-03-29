@@ -1,0 +1,32 @@
+div{
+    margin: 100px;
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+input{
+    width: 0;
+    height: 0;
+}
+label{
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    position: relative;
+}
+.circle{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+}
+input:checked+label{
+    background-color: rgb(27, 27, 98);
+}
+input:checked +label>.circle{
+    left:30px ;
+}
